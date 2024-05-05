@@ -1,0 +1,793 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: #0c0c0c; */
+}
+
+:root{
+    --text-color:#f5f5f5;
+    
+    --hover-color:#14f7ff;
+  
+    --bg-color:#131313;
+    --secon-bg-color:#292e33;
+    --big-front:2.5rem;
+    --normal-front:2rem:
+    --box-shadow:0 0 .5rem var(--hover-color);
+}
+
+/* nav manu */
+
+.nav-manu ul li:hover{
+    text-shadow:0 0 .3rem var(--hover-color);
+
+}
+
+.socail-icon{
+    height: 7rem;
+}
+
+.fa-facebook-f{
+    width: 28px;
+}
+
+
+
+/* dark style */
+
+.dark{
+    background-color:var(--bg-color);
+}
+
+.me{
+    color: var(--hover-color);
+    text-shadow:0 0 .3rem var(--hover-color);
+   }
+   
+
+.fa-brands{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size:0.8rem;
+    padding: 5px;
+    background-color:transparent;
+    border-radius: 20%;
+    border:2px solid var(--hover-color);
+    color:black;
+    box-shadow:0 0 .5rem var(--hover-color);
+
+
+}
+
+.fa-brands:hover{
+    background-color:rgb(12, 11, 9);
+    color:rgb(250, 245, 245);
+    transition: .5s;
+}
+
+
+.dark .me{
+  
+ color: var(--hover-color);
+ text-shadow:0 0 .3rem var(--hover-color);
+}
+
+.dark .fa-brands{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size:0.8rem;
+    padding: 5px;
+    background-color:transparent;
+    border-radius: 20%;
+    border:2px solid var(--hover-color);
+    color:blue;
+    box-shadow:0 0 .5rem var(--hover-color);
+
+
+}
+
+.dark .hello{
+    background-color: coral;
+}
+
+.dark .fa-brands:hover{
+    background-color: var(--hover-color);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+/* for day mode  start*/
+
+
+#button-bg{
+    margin-top: 10px;
+    background: var(--hover-color);
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    transition: all 1s;
+    border-radius: 10px;
+    /* box-shadow: -20px -20px 20px 20px var(--hover-color); */
+    box-shadow:0 0 .5rem var(--hover-color);
+}
+
+#button-bg:hover::after{
+    content: 'Download CV';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7rem;
+    border: 1px solid var(--hover-color);
+    border-radius: 10px;
+    padding-top: 3px;
+    background-color: var(--bg-color);
+    height: 2rem;
+    color:white ;
+    
+}
+/* for day mode  end*/
+
+ .dark #button-bg{
+    margin-top: 10px;
+    background: var(--hover-color);
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    transition: all 1s;
+    border-radius: 10px;
+    /* box-shadow: -20px -20px 20px 20px var(--hover-color); */
+    box-shadow:0 0 .5rem var(--hover-color);
+}
+
+
+.dark #button-bg:hover::after{
+    content: 'Download CV';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7rem;
+    border: 1px solid var(--hover-color);
+    border-radius: 10px;
+    padding-top: 3px;
+    background-color: var(--bg-color);
+    height: 2rem;
+    color:white ;
+    
+}
+
+/* about button */
+
+
+
+#button-red{
+    margin-top: 10px;
+    margin-top: 10px;
+    background: var(--hover-color);
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    z-index: 10;
+
+}
+#button-red:hover{
+    background: transparent;
+    transition:0.5s;
+}
+
+
+.dark .skill{
+    position: relative;
+    color: var(--hover-color);
+    /* transition: all 1s; */
+
+}
+
+.dark .skill::after{
+    content: '';
+    position: absolute;
+    width:0px;
+    height: 2px;
+    background-color:var(--hover-color);
+    bottom: 0;
+    left: 0;
+    transition:width 0.3s linear ;
+    border-radius: 10px;
+    
+
+    
+}
+
+.skill:hover::after{
+    width: 100%;
+
+   
+}
+
+
+.text2{
+    color: rgb(255, 0, 64);
+}
+
+.filter-card{
+  
+    height: 27vh;
+  
+}
+.card-active{
+    display: block;
+    display: none ;
+}
+.hide{
+    display: none;
+}
+
+
+
+/* .hide{
+    display: none;
+}
+.block{
+    display: block;
+} */
+
+
+/* about section end */
+/* :hover::after */
+
+
+/* my service */
+/* .hover:hover{
+    border: 3px solid blue;
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px;
+    transition: all 0.9s;
+    
+    
+} */
+
+
+.card-1 {
+    position: relative;
+    background-color:rgba(0,0,0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+   
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+.content{
+    position: absolute;
+    width:100%;
+    background-color:rgba(0,0,0, 0.7);
+    height:40%;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    transition: all 0.6s;
+    box-sizing: border-box;
+}
+
+.card-1:hover .content{
+    height: 100%;
+
+    
+}
+
+/* ecommerce start */
+.ecommerce{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ecommerce:hover::after{
+    content: "E-commerce ";
+    color: white;
+    position: absolute; 
+    left: 50%;
+    top:50%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 60px;
+    font-size: 40px;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 1s;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0, 0.8);
+
+}
+.hide{
+    display: none;
+}
+.service-button-color{
+    color: yellow;
+}
+
+/* ecommerce end */
+
+
+
+
+
+
+
+
+
+
+.dark .Expert{
+    color: var(--hover-color);
+    text-shadow:0 0 .3rem var(--hover-color);
+}
+
+
+.Expert{
+    color: var(--hover-color);
+    text-shadow:0 0 .3rem var(--hover-color);
+}
+
+
+
+
+
+
+
+#my-class{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+
+.animationn::after{
+    content: "";
+    border-left: 2px solid black;
+    animation: blink 0.5s infinite;
+}
+
+
+.dark .skill-bar{
+    width: 100%;
+    height: 10px;
+    background-color:var(--secon-bg-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill-bar{
+    width: 100%;
+    height: 10px;
+    background-color:var(--secon-bg-color);
+    border-radius: 10px;
+    position: relative;
+    
+}   
+
+.dark .htm{
+     width: 100%; 
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.htm{
+    width:70% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 70%;
+	}
+}
+
+
+
+
+
+
+.dark .csss{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.csss{
+    width:70% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 70%;
+	}
+}
+
+
+
+.dark .js{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.js{
+    width:40% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 40%;
+	}
+} 
+
+
+
+
+.dark .jq{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.jq{
+    width:50% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 50%;
+	}
+} 
+
+
+
+.dark .bs{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.bs{
+    width:70% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 70%;
+	}
+} 
+
+
+
+
+.dark .tc{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.tc{
+    width:50% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 50%;
+	}
+} 
+
+
+
+
+.dark .php{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.php{
+    width:50% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 50%;
+	}
+} 
+
+
+
+.dark .Laravel{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.Laravel{
+    width:75% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 75%;
+	}
+} 
+
+
+
+
+.dark .sq{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.sq{
+    width:70% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 70%;
+	}
+} 
+
+
+
+/* skill */
+
+.skill-1{
+  height: 27vh;
+  position: relative;
+   background-color:var(--bg-color);
+  border: 5px  solid wheat ;
+  border-radius:20px  
+   
+    
+
+}
+
+
+
+/* technical skill */
+.dark .myskill{
+    color: var(--hover-color);
+}
+
+
+
+
+
+
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+        border-color: brown;
+    
+    }
+    100%{
+        opacity: 1;
+       border-color: rgb(23, 7, 7);
+}
+}
+
+@media (max-width: 639px){
+    #bloc{
+        display: none;
+    }
+    #my-class{
+        width:95% ;
+        margin: auto;
+        margin-top: 20px;
+
+       
+    }
+    
+
+}
+@media (min-width: 640px){
+    .manu-bar{
+        display: none;
+       
+    }
+
+}
+
+/* side bar */
+#manu{
+    top: 10px;
+    position: relative;
+    color: rgb(129, 35, 35);
+
+}
+.side-bar{
+    top: 0;
+    z-index: 12;
+    position: absolute;
+    height:100vh;
+    width: 0px;
+    background-color: rgb(19, 12, 12);
+    transition: all .5s;
+}
+
+.toggle-icon{
+    width: 200px;
+}
+#manu{
+    z-index: 30;
+}
+.fa-solid{
+    font-size: 25px;
+}
+
+
+
+.filter-card::-webkit-scrollbar {
+  width: 0;
+  display: none;
+    
+ 
+}
+.scrool::-webkit-scrollbar{
+    display: none;
+
+}
+
+
