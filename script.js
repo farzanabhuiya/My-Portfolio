@@ -28,7 +28,7 @@ $(document).ready(function(){
     //   loop:true
     // });
 
-  let msg = ['Frontend developer','HTML',"CSS","Javascript JS","Tailwind css","and bootstrap",'Backend Developer',"PHP","Laravel","My Sql"];
+  let msg = ['Frontend developer','HTML',"CSS","Javascript JS","and bootstrap",'Backend Developer',"PHP","Laravel","My Sql","Livewire"];
   
   let count = 0;
 
@@ -202,26 +202,26 @@ Bootstrap(70)
 
 
 
-// Tailwind
-let Tai = 0;
+// // Tailwind
+// let Tai = 0;
 
-function Tailwind(skill){
+// function Tailwind(skill){
 
-  let htmlskill  = setInterval(()=>{
-    let b = Tai++;
+//   let htmlskill  = setInterval(()=>{
+//     let b = Tai++;
   
-    if(b==skill){
-      clearInterval(htmlskill)
-    }
+//     if(b==skill){
+//       clearInterval(htmlskill)
+//     }
   
-    $('#Tailwind').text(b+'%')
+//     $('#Tailwind').text(b+'%')
   
-  },10)
+//   },10)
 
 
-}
+// }
 
-Tailwind(50)
+// Tailwind(50)
 
 
 // backend development
@@ -246,7 +246,7 @@ function php(skill){
 
 }
 
-php(50)
+php(60)
 
 // laravel
 
@@ -268,7 +268,7 @@ function laravel(skill){
 
 }
 
-laravel(75)
+laravel(80)
 
 
 // sql
@@ -295,7 +295,26 @@ mysql(70)
 
 
 
+// Tailwind
+let lw = 0;
 
+function Livewire(skill){
+
+  let htmlskill  = setInterval(()=>{
+    let b = Tai++;
+  
+    if(b==skill){
+      clearInterval(htmlskill)
+    }
+  
+    $('#Livewire').text(b+'%')
+  
+  },10)
+
+
+}
+
+Livewire(75)
 
 // active color
 

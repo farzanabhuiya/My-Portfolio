@@ -601,7 +601,7 @@ body{
     animation: info 1.5s;
 }
 .php{
-    width:50% ; 
+    width:60% ; 
      background-color:var(--hover-color);
     height: 10px;
     position: absolute;
@@ -617,7 +617,7 @@ body{
 		width:0%;
 	}
 	to{
-		width: 50%;
+		width: 60%;
 	}
 } 
 
@@ -634,7 +634,7 @@ body{
     animation: info 1.5s;
 }
 .Laravel{
-    width:75% ; 
+    width:80% ; 
      background-color:var(--hover-color);
     height: 10px;
     position: absolute;
@@ -650,7 +650,7 @@ body{
 		width:0%;
 	}
 	to{
-		width: 75%;
+		width: 80%;
 	}
 } 
 
@@ -689,6 +689,39 @@ body{
 } 
 
 
+
+
+
+.dark .lw{
+    width: 100%;
+    background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+}
+.lw{
+    width:75% ; 
+     background-color:var(--hover-color);
+    height: 10px;
+    position: absolute;
+    box-shadow: 21px 12px 12px 10px rgba(255, 20, 20, 0.2);
+    border-radius: 10px;
+    box-shadow:0 0 .5rem var(--hover-color);
+    animation: info 1.5s;
+   
+    
+}
+@keyframes info{
+	from{
+		width:0%;
+	}
+	to{
+		width: 75%;
+	}
+} 
 
 /* skill */
 
